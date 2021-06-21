@@ -1,0 +1,78 @@
+/* video background */
+.video-background {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.video-background::after {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 34px;
+  position: absolute;
+  background-color: white;
+  border-radius: 34px;
+  bottom: -17px;
+  left: 50%;
+  margin-left: -105px;
+}
+
+/* about atma */
+
+/* slider */
+.carousel-item {
+  height: 450px;
+  background: #777;
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* footer */
+footer {
+  height: 180px;
+  background-color: rgb(49, 49, 49);
+}
+
+.footer-content {
+  box-sizing: border-box;
+  padding-top: 28px;
+  color: white;
+}
+
+.icons {
+  width: 240px;
+}
+
+.fab {
+  color: white;
+  font-size: 40px;
+}
+
+.fab:hover {
+  color: rgb(206, 84, 84);
+}
+
+.footer-content p {
+  padding-top: 25px;
+}
+
+/* grid history */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.grid-history {
+  margin: 100px 0px 40px 0px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <script src="https://kit.fontawesome.com/b249d00227.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="fixed.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logojpg.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top" />
+          Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#">Marketplace</a>
+            <a class="nav-link" href="#">Ticket</a>
+            <a class="nav-link" href="#">Livestream</a>
+            <a class="nav-link" href="#">Lineup</a>
+            <a class="nav-link" href="history.html">History</a>
+            <a class="nav-link" href="#">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- background video -->
+    <div class="video-background">
+      <div class="video-wrap">
+        <div id="video">
+          <video id="bgvid" autoplay loop muted playsinline>
+            <source src="video/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- akhir background video -->
+
+    <!-- About atma -->
+    <div class="container about text-center py-5">
+      <h2>Atma Asta</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi voluptatum modi minus vero ratione, mollitia non eos reiciendis voluptates accusantium aspernatur veritatis temporibus quos quidem ipsa dolor ea! Saepe, consequatur.
+      </p>
+    </div>
+    <!-- akhir about atma -->
+
+    <!-- slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="overlay-image" style="background-image: url(img/marc-olivier-paquin-2_RQhbu0ZDQ-unsplash.jpg)"></div>
+        </div>
+        <div class="carousel-item">
+          <div class="overlay-image" style="background-image: url(img/pien-muller-Fh-Q-xfdh_o-unsplash.jpg)"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- akhir slider -->
+
+    <!-- footer -->
+    <footer class="text-center">
+      <div class="container footer-content">
+        <h5>Follow Us</h5>
+        <div class="icons mx-auto d-flex justify-content-evenly">
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <p>©2021. Atma Asta. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (this.window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
+  </body>
+</html>
