@@ -1,3 +1,21 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 58px; /* Set same as footer's height */
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 180px; /* Set same as footer's height */
+}
+
 /* video background */
 .video-background {
   width: 100%;
@@ -42,6 +60,9 @@
 footer {
   height: 180px;
   background-color: rgb(49, 49, 49);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-content {
@@ -73,6 +94,13 @@ footer {
   height: auto;
 }
 
-.grid-history {
-  margin: 100px 0px 40px 0px;
+.grid-history,
+.grid-lineup {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* grid lineup */
+.lineup-image {
+  border-radius: 50%;
 }
