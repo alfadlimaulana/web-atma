@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="img/logo.svg" alt="" width="30" height="30" class="d-inline-block align-text-top" />
@@ -112,9 +112,15 @@
 
       var button = document.querySelector(".navbar-toggler");
 
-      button.addEventListener("click", function () {
-        nav.classList.add("bg-dark", "shadow");
-      });
+      if (this.window.pageYOffset <= 100) {
+        button.addEventListener("click", function () {
+          if (nav.classList.contains("navbar-bg")) {
+            nav.classList.remove("navbar-bg", "shadow");
+          } else {
+            nav.classList.add("navbar-bg", "shadow");
+          }
+        });
+      }
     </script>
   </body>
 </html>
