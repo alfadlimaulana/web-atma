@@ -8,13 +8,13 @@ body {
 body::before {
   content: "";
   display: block;
-  height: 58px; /* Set same as footer's height */
+  height: 60px;
 }
 
 body::after {
   content: "";
   display: block;
-  height: 180px; /* Set same as footer's height */
+  height: 180px;
 }
 
 /* navbar */
@@ -113,6 +113,16 @@ footer {
 }
 
 /* grid ticket */
+.grid-ticket .card {
+  border-radius: 35px;
+}
+
+.grid-ticket .card a {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  border: none;
+}
+
 .ticket-1 {
   background-image: linear-gradient(#ebd9c5, #eda88a);
 }
@@ -123,4 +133,13 @@ footer {
 
 .ticket-3 {
   background-image: linear-gradient(#c4efe7, #37b487);
+}
+
+/* grid faq */
+.grid-faq {
+  margin-top: 30px;
+}
+
+.grid-faq .card {
+  border-radius: 32px;
 }
