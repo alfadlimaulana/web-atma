@@ -38,7 +38,7 @@ body::after {
   width: 210px;
   height: 34px;
   position: absolute;
-  background-color: #8BC5C5;
+  background-color: #8bc5c5;
   border-radius: 34px;
   bottom: -17px;
   left: 50%;
@@ -47,9 +47,11 @@ body::after {
 }
 
 /* about atma */
-#about{
+.about-bg {
   background-image: url("img/tengah.png");
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* slider */
@@ -70,8 +72,6 @@ body::after {
   background-repeat: no-repeat;
 }
 
-
-
 /* footer */
 footer {
   height: 180px;
@@ -85,6 +85,10 @@ footer {
   box-sizing: border-box;
   padding-top: 28px;
   color: white;
+}
+
+.footer-content h5 {
+  font-family: "snippet";
 }
 
 .icons {
@@ -121,6 +125,14 @@ footer {
   border-radius: 50%;
 }
 
+.lineup-title h2 {
+  font-family: "snippet", sans-serif;
+}
+
+.lineup-title p {
+  font-family: "mulish", sans-serif;
+}
+
 /* grid ticket */
 .grid-ticket .card {
   border-radius: 35px;
@@ -147,6 +159,7 @@ footer {
 /* grid faq */
 .grid-faq {
   margin-top: 30px;
+  font-family: "Roboto", sans-serif;
 }
 
 .grid-faq .card {
@@ -154,11 +167,11 @@ footer {
 }
 
 /*live stream*/
-.live-text{
+.live-text {
   border: 0px;
 }
 
-.p-card-live{
+.p-card-live {
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
@@ -170,7 +183,7 @@ footer {
 }
 
 /*history*/
-.tmst2020{
+.tmst2020 {
   background-image: url("img/tmst2020.png");
   background-repeat: no-repeat;
   /*width: 100%;*/
