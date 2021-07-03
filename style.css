@@ -16,7 +16,7 @@ body::before {
 body::after {
   content: "";
   display: block;
-  height: 180px;
+  height: 220px;
 }
 
 /* navbar */
@@ -54,9 +54,16 @@ body::after {
   background-position: center;
 }
 
+@media screen and (max-width: 992px) {
+  .about .row {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+  }
+}
+
 /* slider */
 .carousel-item {
-  height: 450px;
+  height: 554px;
   background: #777;
   position: relative;
 }
@@ -74,8 +81,11 @@ body::after {
 
 /* footer */
 footer {
-  height: 180px;
+  height: 220px;
   background-image: url("img/footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -83,7 +93,6 @@ footer {
 
 .footer-content {
   box-sizing: border-box;
-  padding-top: 28px;
   color: white;
 }
 
