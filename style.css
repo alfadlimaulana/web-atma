@@ -147,12 +147,6 @@ footer {
   padding-top: 25px;
 }
 
-/* grid history */
-.card-img-top {
-  width: 100%;
-  height: auto;
-}
-
 .grid-history,
 .grid-lineup {
   padding-top: 50px;
@@ -226,4 +220,15 @@ footer {
   background-size: cover;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+
+/* grid history */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.history-video {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }

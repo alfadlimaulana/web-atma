@@ -15,7 +15,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Snippet&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mulish&family=Snippet&display=swap" rel="stylesheet" />
 
     <title>Atma Asta</title>
   </head>
@@ -23,16 +23,16 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo.svg" alt="" width="30" height="30" class="d-inline-block align-text-top" />
-          Atma Asta
+        <a class="navbar-brand align-midle" href="index.html">
+          <img src="img/logo.svg" alt="" width="35" height="35" class="d-inline-block align-text-top" />
+          <img src="img/nav-atma.svg" alt="" width="35" height="35" class="d-inline-block align-text-top" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="shopee.co.id/atma.asta">Marketplace</a>
+            <a class="nav-link" href="https://shopee.co.id/atma.asta">Marketplace</a>
             <a class="nav-link" href="ticket.html">Ticket</a>
             <a class="nav-link" href="live.html">Livestream</a>
             <a class="nav-link" href="lineup.html">Lineup</a>
@@ -46,12 +46,12 @@
 
     <!-- grid history -->
     <div class="container grid-history">
-      <div class="row g-3">
+      <div class="row g-3 py-4">
         <div class="col-sm-12 col-md-4 col-lg-3">
           <div class="card">
             <!-- embed video atma 2016-->
             <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/lVeYGpdW9LM" title="YouTube video" allowfullscreen></iframe>
+              <iframe class="history-video" src="https://www.youtube.com/embed/lVeYGpdW9LM" title="YouTube video" allowfullscreen></iframe>
             </div>
             <!-- akhir embed video -->
             <div class="card-body tmst" style="background-image: url(img/tmst1.png)">
@@ -59,12 +59,15 @@
               <p class="card-text">See More</p>
             </div>
           </div>
+          <a href="">
+            <img class="py-4" src="img/tulisan-bandung-temp.svg" alt="" width="100%" />
+          </a>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-3">
           <div class="card">
             <!-- embed video atma 2018-->
             <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/XvCS04RayGg" title="YouTube video" allowfullscreen></iframe>
+              <iframe class="history-video" src="https://www.youtube.com/embed/XvCS04RayGg" title="YouTube video" allowfullscreen></iframe>
             </div>
             <!-- akhir embed video -->
             <div class="card-body tmst" style="background-image: url(img/tmst2.png)">
@@ -72,12 +75,15 @@
               <p class="card-text">See More</p>
             </div>
           </div>
+          <a href="">
+            <img class="py-4" src="img/tulisan-hifestus2.svg" alt="" width="100%" />
+          </a>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-3">
           <div class="card">
             <!-- embed video atma 2019-->
             <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/59SnWcF7zW8" title="YouTube video" allowfullscreen></iframe>
+              <iframe class="history-video" src="https://www.youtube.com/embed/59SnWcF7zW8" title="YouTube video" allowfullscreen></iframe>
             </div>
             <!-- akhir embed video -->
             <div class="card-body tmst" style="background-image: url(img/tmst3.png)">
@@ -85,12 +91,15 @@
               <p class="card-text">See More</p>
             </div>
           </div>
+          <a href="">
+            <img class="py-4" src="img/tulisan-ratetra.svg" alt="" width="100%" />
+          </a>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-3">
           <div class="card">
             <!-- embed video atma 2020-->
             <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/DQ99tmlGXI4" title="YouTube video" allowfullscreen></iframe>
+              <iframe class="history-video" src="https://www.youtube.com/embed/DQ99tmlGXI4" title="YouTube video" allowfullscreen></iframe>
             </div>
             <!-- akhir embed video -->
             <div class="card-body tmst" style="background-image: url(img/tmst4.png)">
@@ -98,6 +107,9 @@
               <p class="card-text">See More</p>
             </div>
           </div>
+          <a href="">
+            <img class="py-4" src="img/tulisan-rhemura.svg" alt="" width="100%" />
+          </a>
         </div>
       </div>
     </div>
@@ -117,5 +129,10 @@
     </footer>
     <!-- akhir footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+      navbarbg();
+      navbarcollapse();
+    </script>
   </body>
 </html>
