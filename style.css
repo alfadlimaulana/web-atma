@@ -16,12 +16,27 @@ body::before {
 body::after {
   content: "";
   display: block;
-  height: 220px;
+  height: 180px;
 }
 
 /* navbar */
 .navbar-bg {
-  background-color: #63bac6;
+  background-color: rgba(99, 186, 198, 0.9);
+}
+
+.navbar-brand {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.navbar-nav {
+  color: #695032;
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 /* video background */
@@ -36,34 +51,49 @@ body::after {
   content: "";
   display: block;
   width: 210px;
-  height: 34px;
+  height: 17px;
   position: absolute;
-  background-color: #8bc5c5;
-  border-radius: 34px;
-  bottom: -17px;
+  background-color: #8ac5c5;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+  bottom: -1px;
   left: 50%;
   margin-left: -105px;
-  z-index: -20;
 }
 
 /* about atma */
 .about-bg {
-  background-image: url("img/tengah.png");
+  background-image: url("img/about_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-@media screen and (max-width: 992px) {
+.about-content h2 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  color: #3e4445;
+}
+
+.about-content p {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 16px;
+  color: #131313;
+}
+
+@media screen and (max-width: 1400px) {
   .about .row {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 24px;
   }
 }
 
 /* slider */
 .carousel-item {
-  height: 554px;
+  height: 522px;
   background: #777;
   position: relative;
 }
@@ -81,8 +111,8 @@ body::after {
 
 /* footer */
 footer {
-  height: 220px;
-  background-image: url("img/footer.svg");
+  height: 180px;
+  background-image: url("img/footer2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -176,9 +206,6 @@ footer {
 }
 
 /*live stream*/
-.live-text {
-  border: 0px;
-}
 
 .p-card-live {
   font-family: Mulish;
@@ -192,8 +219,11 @@ footer {
 }
 
 /*history*/
-.tmst2020 {
-  background-image: url("img/tmst2020.png");
+.tmst {
+  width: 100%;
+  height: auto;
   background-repeat: no-repeat;
-  /*width: 100%;*/
+  background-size: cover;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
