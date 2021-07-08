@@ -226,6 +226,19 @@ footer {
 }
 
 /* grid history */
+.grid-history h2 {
+  font-family: "snippet", sans-serif;
+}
+
+.history-logo {
+  display: block;
+  transition: 0.8s;
+}
+
+.history-logo:hover {
+  transform: scale(1.1);
+}
+
 .card-img-top {
   width: 100%;
   height: auto;
