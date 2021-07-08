@@ -20,6 +20,9 @@ body::after {
 }
 
 /* navbar */
+.navbar {
+  color: #ffffff;
+}
 .navbar-bg {
   background-color: rgba(99, 186, 198, 0.9);
 }
