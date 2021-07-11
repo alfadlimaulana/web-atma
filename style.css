@@ -25,6 +25,7 @@ body::after {
 }
 .navbar-bg {
   background-color: rgba(99, 186, 198, 0.9);
+  transition: 1ms;
 }
 
 .navbar-brand {
@@ -140,10 +141,12 @@ footer {
 .fab {
   color: white;
   font-size: 40px;
+  transition: 0.6s;
 }
 
 .fab:hover {
   color: rgb(206, 84, 84);
+  transform: scale(1.2);
 }
 
 .footer-content p {
@@ -200,10 +203,14 @@ footer {
 
 .grid-faq .card {
   border-radius: 32px;
+  transition: 0.4s;
+}
+
+.grid-faq .card:hover {
+  transform: scale(1.03);
 }
 
 /*live stream*/
-
 .p-card-live {
   font-family: Mulish;
   font-size: 16px;
@@ -225,7 +232,6 @@ footer {
   border-bottom-right-radius: 3px;
 }
 
-/* grid history */
 .grid-history h2 {
   font-family: "snippet", sans-serif;
 }
@@ -247,4 +253,9 @@ footer {
 .history-video {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+}
+
+/* Sponsor */
+.sponsor-title {
+  font-family: "snippet", sans-serif;
 }
