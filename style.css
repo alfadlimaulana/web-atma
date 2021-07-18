@@ -210,6 +210,11 @@ footer {
 .grid-faq .card {
   border-radius: 32px;
   transition: 0.4s;
+  height: 180px;
+}
+
+.grid-faq .card .card-title {
+  font-weight: bolder;
 }
 
 .grid-faq .card:hover {
@@ -229,7 +234,7 @@ footer {
 }
 
 /*history*/
-.tmst {
+.tmst-1 {
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
