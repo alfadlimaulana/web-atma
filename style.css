@@ -29,6 +29,11 @@ body::after {
   transition: 1ms;
 }
 
+.collapse-bg {
+  background-color: rgba(99, 186, 198, 0.9);
+  transition: 1ms;
+}
+
 .navbar-brand {
   font-family: "Lato";
   font-style: normal;

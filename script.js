@@ -9,3 +9,12 @@ function navbarbg() {
     }
   });
 }
+
+function navbarcollapse() {
+  var button = document.querySelector(".navbar-toggler");
+  var nav = document.querySelector("nav");
+
+  button.addEventListener("click", function () {
+    nav.classList.toggle("collapse-bg");
+  });
+}
