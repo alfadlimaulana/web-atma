@@ -24,12 +24,8 @@ body::after {
   color: #ffffff;
 }
 
+.collapse-bg,
 .navbar-bg {
-  background-color: rgba(99, 186, 198, 0.9);
-  transition: 1ms;
-}
-
-.collapse-bg {
   background-color: rgba(99, 186, 198, 0.9);
   transition: 1ms;
 }
