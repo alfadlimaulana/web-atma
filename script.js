@@ -1,11 +1,14 @@
 function navbarbg() {
   var nav = document.querySelector("nav");
+  var navLogo = document.querySelector(".nav-logo");
 
   document.addEventListener("scroll", function () {
     if (window.pageYOffset > 10) {
       nav.classList.add("navbar-bg", "shadow");
+      navLogo.src = "img/stiker-coklat.svg";
     } else {
       nav.classList.remove("navbar-bg", "shadow");
+      navLogo.src = "img/logo.svg";
     }
   });
 }
