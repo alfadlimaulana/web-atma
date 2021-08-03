@@ -293,5 +293,9 @@ footer {
 }
 
 .grid-danus .card-img-top {
-  height: 350px;
+  max-width: 198px;
+  max-height: 297px;
+  /* width: auto;
+  height: auto; */
+  object-fit: cover;
 }
