@@ -287,15 +287,24 @@ footer {
   border-radius: 3px;
 }
 
+.modal-content {
+  background-image: url("img/bg.svg");
+  background-size: cover;
+  position: center top;
+}
+
 /* Sponsor */
 .sponsor-title {
   font-family: "snippet", sans-serif;
 }
 
-.grid-danus .card-img-top {
-  max-width: 198px;
-  max-height: 297px;
-  /* width: auto;
-  height: auto; */
-  object-fit: cover;
+/* danus */
+.grid-danus .card-text {
+  text-decoration: none;
+  color: #8ac5c5;
+}
+
+.grid-danus .card-text:hover {
+  text-decoration: none;
+  color: white;
 }
