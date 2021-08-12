@@ -20,6 +20,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" />
 
+    <!-- AoS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Atma Asta</title>
   </head>
   <body>
@@ -52,7 +55,7 @@
     <div class="container grid-danus">
       <div class="row g-3 py-4">
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="img/danus/sticker.jpeg" class="card-img-top img-fluid" alt="sticker set" />
             <div class="card-body tmst" style="background-color: #ffd596">
               <h5 class="card-title">Sticker Set</h5>
@@ -61,7 +64,7 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="img/danus/StikerLogo.jpeg" class="card-img-top img-fluid" alt="sticker logo" />
             <div class="card-body tmst" style="background-color: #9edda9">
               <h5 class="card-title">Sticker Logo</h5>
@@ -70,7 +73,7 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="img/danus/Keychain.jpeg" class="card-img-top img-fluid" alt="keychain" />
             <div class="card-body tmst" style="background-color: #f4ffb1">
               <h5 class="card-title">Keychain</h5>
@@ -79,7 +82,7 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div id="carouselShirt" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -102,13 +105,13 @@
               </button>
             </div>
             <div class="card-body tmst" style="background-color: #ffd596">
-              <h5 class="card-title">T-Shirt</h5>
+              <h5 class="card-title" data-aos="fade-up">T-Shirt</h5>
               <a href="https://shopee.co.id/Kaos-Atma-Asta-2021-i.453334905.11307770023?adsid=0&campaignid=0&position=-1" target="_blank" class="card-text">See More</a>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div id="carouselTotebag" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -134,7 +137,7 @@
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-2">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <img src="img/danus/notebook.jpeg" class="card-img-top img-fluid" alt="notebook" />
             <div class="card-body tmst" style="background-color: #f4ffb1">
               <h5 class="card-title">Notebook</h5>
@@ -164,6 +167,12 @@
     <script>
       navbarbg();
       navbarcollapse();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
     </script>
   </body>
 </html>

@@ -79,7 +79,8 @@ body::after {
   margin-top: -59px;
 }
 
-.video-background::after {
+/* about atma */
+.about-bg::before {
   content: "";
   display: block;
   width: 210px;
@@ -88,13 +89,13 @@ body::after {
   background-color: #8ac5c5;
   border-top-right-radius: 17px;
   border-top-left-radius: 17px;
-  bottom: -1px;
+  top: -16px;
   left: 50%;
   margin-left: -105px;
 }
 
-/* about atma */
 .about-bg {
+  position: relative;
   background-image: url("img/about_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;

@@ -20,6 +20,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" />
 
+    <!-- AoS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Atma Asta</title>
   </head>
   <body>
@@ -64,14 +67,14 @@
     <section class="about-bg py-5">
       <div class="container about">
         <div class="row justify-content-between text-center p-4 about-content">
-          <div class="col-sm-12 col-lg-4 about-text align-self-center">
+          <div class="col-sm-12 col-lg-4 about-text align-self-center" data-aos="fade-up">
             <h2>
               ATMA ASTA<br />
               2021
             </h2>
             <br />
           </div>
-          <div class="col-sm-12 col-lg-4 about-text align-self-center">
+          <div class="col-sm-12 col-lg-4 about-text align-self-center" data-aos="fade-up">
             <p>Atma Asta is an annual music and arts festival organized by SMAN 8 Bandung. Comes from 2 sanskrit words, Atma and Asta. Atma means the soul humans and Asta means eight. Therefore Atma Asta means soul of eight.</p>
           </div>
         </div>
@@ -110,7 +113,7 @@
       <h1 style="font-family: 'bubblegum sans', sans-serif" class="text-center">Check This Out</h1>
       <div class="row g-3 py-4 justify-content-center">
         <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="ratio ratio-16x9">
               <iframe
                 width="560"
@@ -129,7 +132,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="ratio ratio-16x9">
               <iframe
                 width="560"
@@ -148,7 +151,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
-          <div class="card">
+          <div class="card" data-aos="fade-up">
             <div class="ratio ratio-16x9">
               <iframe
                 width="560"
@@ -188,6 +191,12 @@
     <script>
       navbarbg();
       navbarcollapse();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });
     </script>
   </body>
 </html>
