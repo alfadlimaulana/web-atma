@@ -40,7 +40,8 @@ function modal() {
       date.innerHTML = "<strong>Date :</strong> January 9, 2016";
       venue.innerHTML = "<strong>Venue :</strong> Sasana Budaya Ganesha, Bandung";
       theme.innerHTML = "<strong>Theme :</strong> Bandung";
-      text.innerHTML = "Somewhere in a hidden place, water from Citarum River got blocked from lava buildup. This resulted in flooding in the surrounding places creating a big lake called ancient Bandoeng Lake. A family of poor merchant came to the lake and they see tons od opportunities. They cried for a while, and after then they start to build a hut. They stayed there for the night while exploring the lake. After a while of exploring, they found valuable resourses. Day by day, they are able to collect them and store them right next to the hut. But then, some dirty merchants see this and decide to steal their loot and take them away. They are confused where all the resources they have been looking for. But they took it patiently and looked back for the resources they needed. They lived happily before there came a greedy human who did whatever he wanted to the Bandung lake. He does as he pleases, taking as many resources as possible. Until one day when this greedy man came back to the Bandung lake he was confused why the lake receded. He cried at that moment and remembered how greedy he was he didn't want to share with others and now everything he had is gone.";
+      text.innerHTML =
+        "Somewhere in a hidden place, water from Citarum River got blocked from lava buildup. This resulted in flooding in the surrounding places creating a big lake called ancient Bandoeng Lake. A family of poor merchant came to the lake and they see tons od opportunities. They cried for a while, and after then they start to build a hut. They stayed there for the night while exploring the lake. After a while of exploring, they found valuable resourses. Day by day, they are able to collect them and store them right next to the hut. But then, some dirty merchants see this and decide to steal their loot and take them away. They are confused where all the resources they have been looking for. But they took it patiently and looked back for the resources they needed. They lived happily before there came a greedy human who did whatever he wanted to the Bandung lake. He does as he pleases, taking as many resources as possible. Until one day when this greedy man came back to the Bandung lake he was confused why the lake receded. He cried at that moment and remembered how greedy he was he didn't want to share with others and now everything he had is gone.";
     } else if (e.target.classList.contains("logo2018")) {
       modalTitle.innerHTML = "Atma Asta 2018";
       modalImage.src = "img/tmst2018.jpeg";
@@ -69,4 +70,27 @@ function modal() {
   });
 }
 
-function muteVideo() {}
+function muteVideo() {
+  // Volume for teaser's video
+  const volume = document.getElementById("volume");
+  const teaserVideo = jQuery("#video-teaser");
+  let isMuted = true;
+  jQuery(function () {
+    teaserVideo.YTPlayer();
+    jQuery("#P1").YTPlayer();
+  });
+
+  volume.addEventListener("click", () => {
+    if (isMuted) {
+      teaserVideo.YTPUnmute();
+      isMuted = false;
+      volume.classList.remove("fa-volume-mute");
+      volume.classList.add("fa-volume-up");
+    } else {
+      teaserVideo.YTPMute();
+      isMuted = true;
+      volume.classList.remove("fa-volume-up");
+      volume.classList.add("fa-volume-mute");
+    }
+  });
+}

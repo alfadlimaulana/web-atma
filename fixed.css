@@ -6,41 +6,53 @@
 }
 
 /*--- Fixed Video Background iOS/Mobile Style--*/
-.video-wrap {
-  clip: rect(0, auto, auto, 0);
+section#teaser {
+  width: 100%;
+  height: 100vh;
+  margin-top: -61px;
+  position: relative;
+}
+
+section#teaser .before-teaser {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section#teaser::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
 }
 
-#video {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
+div#info {
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;
   width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
-  z-index: -1000;
+  z-index: 2;
+  gap: 20px;
 }
 
-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background: url("") no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
+div#info i {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

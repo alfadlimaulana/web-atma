@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <script src="https://kit.fontawesome.com/b249d00227.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <link rel="stylesheet" href="/bootstrap-5.0.1-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
@@ -17,11 +16,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Lato:wght@700&family=Mulish&family=Snippet&display=swap" rel="stylesheet" />
 
-    <!-- Favicon -->
+    <!-- icon -->
     <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="https://kit.fontawesome.com/b249d00227.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <!-- AoS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- background video -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.mb.YTPlayer.js"></script>
 
     <title>Atma Asta</title>
   </head>
@@ -52,15 +57,12 @@
     <!-- akhir navbar -->
 
     <!-- background video -->
-    <div class="video-background">
-      <div class="video-wrap">
-        <div id="video">
-          <video id="bgvid" autoplay loop playsinline muted>
-            <source src="video/videocomp.mp4" type="video/mp4" />
-          </video>
-        </div>
+    <section id="teaser">
+      <div id="video-teaser" class="player" data-property="{ videoURL:'https://youtu.be/jzIjRCdFFGo', containment:'body', autoPlay:true, mute:true, startAt:0, opacity:1, optimizeDisplay:true, addRaster:true, abundance: 0 }"></div>
+      <div id="info" class="flex">
+        <i id="volume" class="fas fa-volume-mute"></i>
       </div>
-    </div>
+    </section>
     <!-- akhir background video -->
 
     <!-- About atma -->
@@ -188,6 +190,7 @@
     <script>
       navbarbg();
       navbarcollapse();
+      muteVideo();
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
