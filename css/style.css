@@ -1,0 +1,318 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("img/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 59px;
+}
+
+body::after {
+  content: "";
+  display: block;
+  height: 180px;
+}
+
+/* navbar */
+.navbar {
+  color: #ffffff;
+}
+
+.navbar-bg {
+  background-color: rgba(99, 186, 198, 0.9);
+  transition: 1ms;
+}
+
+.collapse-bg {
+  background-color: rgba(99, 186, 198, 0.9);
+  transition: 1ms;
+}
+
+.navbar-brand {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: Bold;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.navbar-nav {
+  color: #695032;
+  font-family: Mulish;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #695032;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #eba848;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(75, 51, 22, 0.55);
+  border-color: rgba(105, 80, 50, 0.1);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28105, 80, 50, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* video background */
+.video-background {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-top: -59px;
+}
+
+/* about atma */
+.about-bg::before {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 17px;
+  position: absolute;
+  background-color: #8ac5c5;
+  border-top-right-radius: 17px;
+  border-top-left-radius: 17px;
+  top: -16px;
+  left: 50%;
+  margin-left: -105px;
+}
+
+.about-bg {
+  position: relative;
+  background-image: url("img/about_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-content h2 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  color: #3e4445;
+}
+
+.about-content p {
+  font-family: Mulish;
+  font-weight: 400;
+  font-size: 16px;
+  color: #131313;
+}
+
+@media screen and (max-width: 1400px) {
+  .about .row {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+  }
+}
+
+.grid-gallery {
+  background-image: url(img/bg.svg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* slider */
+.carousel-item {
+  height: auto;
+  background: #777;
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* footer */
+footer {
+  height: 180px;
+  background-image: url("img/footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-content {
+  box-sizing: border-box;
+  color: white;
+}
+
+.footer-content h5 {
+  font-family: "snippet";
+}
+
+.icons {
+  width: 240px;
+}
+
+.fab {
+  color: white;
+  font-size: 40px;
+  transition: 0.6s;
+}
+
+.fab:hover {
+  color: rgb(206, 84, 84);
+  transform: scale(1.2);
+}
+
+.footer-content p {
+  padding-top: 25px;
+}
+
+.grid-history,
+.grid-lineup {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* grid lineup */
+.lineup-image {
+  border-radius: 50%;
+}
+
+.lineup-title h2 {
+  font-family: "snippet", sans-serif;
+}
+
+.lineup-title p {
+  font-family: "mulish", sans-serif;
+}
+
+/* grid ticket */
+.grid-ticket .card {
+  border-radius: 35px;
+}
+
+.grid-ticket .card a {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  border: none;
+}
+
+.ticket-1 {
+  background-image: linear-gradient(#ebd9c5, #eda88a);
+}
+
+.ticket-2 {
+  background-image: linear-gradient(#f8f3cc, #deb35d);
+}
+
+.ticket-3 {
+  background-image: linear-gradient(#c4efe7, #37b487);
+}
+
+/* grid faq */
+.grid-faq {
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid-faq .card {
+  border-radius: 32px;
+  transition: 0.4s;
+  height: 180px;
+}
+
+.grid-faq .card .card-title {
+  font-weight: bolder;
+}
+
+.grid-faq .card:hover {
+  transform: scale(1.03);
+}
+
+/*live stream*/
+.p-card-live {
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*history*/
+.tmst-1 {
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.grid-history h2 {
+  font-family: "snippet", sans-serif;
+}
+
+.history-logo {
+  display: block;
+  transition: 0.8s;
+}
+
+.history-logo:hover {
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.history-video {
+  border-radius: 3px;
+}
+
+.modal-content {
+  background-image: url("img/bg.svg");
+  background-size: cover;
+  position: center top;
+}
+
+/* Sponsor */
+.sponsor-title {
+  font-family: "snippet", sans-serif;
+}
+
+/* danus */
+.grid-danus .card-text {
+  text-decoration: none;
+  color: #f23325;
+}
+
+.grid-danus .card-text:hover {
+  text-decoration: none;
+  color: #1b2e5c;
+}
